@@ -6,12 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <style>
+
+    :root {
+        --primary-color: pink;
+        --secondary-color: magenta;
+        --box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+        --border: 1px solid blue;
+
+    }
     h2 {
-        color: red;
+        color: var(--primary-color);
+        box-shadow: var(--box-shadow);
+
     }
 
     h3 {
-        border: 1px solid red;
+        color: var(--secondary-color);
+        border: var(--border);
+    }
+
+    p {
+        background-color: var(--primary-color);
+        color: rgb(69, 49, 69);
+        box-shadow: var(--box-shadow);
     }
 
 
@@ -22,5 +39,7 @@
   <h2>Contact me</h2>
   <h3>By email</h3>
   <h3>By phone</h3>
+
+  <p>This is a paragraph of original content</p>
 </body>
 </html>
